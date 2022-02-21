@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    color: rgb(133, 79, 138);
+}
+.feedback
+{
+    position: relative;
+    min-height: 130vh;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-image: url(/pic5.png);
+    background-size: cover;
+    background-image: linear-gradient(315deg,rgb(43, 121, 134) 0%,rgb(4, 75, 107) 60%);
+}
+
+.feedback .content
+{
+    max-width: 800px;
+    text-align: center;
+
+}
+.feedback .content h2
+{
+    font-size: 70px;
+    font-weight: 550;
+    color:rgba(238, 17, 172, 0.973);
+  
+}
+
+.feedback .content .low
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8%;
+    color: rgb(233, 230, 77);
+
+}
+
+.feedbackForm
+{
+    width: 50%;
+    padding: 20px;
+    background: rgb(248, 249, 250);
+    border-radius: 20px;
+    
+  
+}
+.feedbackForm h2
+{
+    font-size: 30px;
+    color: rgba(58, 104, 141, 0.932);
+    font-weight: 500;
+}
+.feedbackForm .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top:10px ;
+}
+.feedbackForm .inputbox input,
+.feedbackForm .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.feedbackForm .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    pointer-events:none;
+    transition: 0.5s;
+    color:#666;
+}
+.feedbackForm .inputbox input:focus ~ span,
+.feedbackForm .inputbox input:valid ~ span,
+.feedbackForm .inputbox textarea:focus ~ span,
+.feedbackForm .inputbox textarea:valid ~ span
+{
+    color:#e91e63;
+    font-size: 12px;
+    transform:translateY(-20px);
+}
+.feedbackForm .inputbox input[type="submit"]
+{
+    width:100px ;
+    background: #00bcd4;
+    color: rgba(252, 247, 247, 0.514);
+    border-radius: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:991px)
+{
+    .feedback
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+
+    }
+    .container .feedbackInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .feedbackInfo,
+    .feedbackForm
+    {
+        width: 100%;
+    }
+}
